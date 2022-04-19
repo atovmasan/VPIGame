@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/VPIGame/static/css/main.5e41a135.css",
-    "main.js": "/VPIGame/static/js/main.e22c25b0.js",
+    "main.js": "/VPIGame/static/js/main.f2107806.js",
     "static/js/787.28cb0dcd.chunk.js": "/VPIGame/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/VPIGame/index.html",
     "main.5e41a135.css.map": "/VPIGame/static/css/main.5e41a135.css.map",
-    "main.e22c25b0.js.map": "/VPIGame/static/js/main.e22c25b0.js.map",
+    "main.f2107806.js.map": "/VPIGame/static/js/main.f2107806.js.map",
     "787.28cb0dcd.chunk.js.map": "/VPIGame/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e41a135.css",
-    "static/js/main.e22c25b0.js"
+    "static/js/main.f2107806.js"
   ]
 }
