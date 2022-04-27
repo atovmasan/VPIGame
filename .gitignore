@@ -8,6 +8,12 @@
 /coverage
 
 # production
+/README.md
+package.json
+package-lock.json
+/src
+/public
+/idea.
 
 
 # misc
