@@ -7,7 +7,7 @@ export const NewCountry = (name) => {
         CountyList.push({
             id:  getState().ContentReducer.CountryData.CountriesTruth[0].id + getState().ContentReducer.CountryData.CountriesTruth[0].LastCountryID,
             name: name,
-            LastElementID: 0,
+            LastElementID: 1,
             Economy: [
                 {"coffers": {id: 0, name: "coffers", count: 1000}}
             ],

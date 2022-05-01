@@ -7,9 +7,12 @@ import { doc, getFirestore, setDoc } from "firebase/firestore"
 export const NextDataThunkCreator = (id, lastID) => {
     return async function NextData(dispatch, getState) {
         let data = getState().ContentReducer.CountryData.CountriesTruth
-        for (let i = 0; i < lastID + 1; i++) {
-            data[id].Economy[i].coffers.count = data[id].Economy[i].coffers.count + data[id].Growhts[i].coffers.count
+        for (let a = 0; a < data[0].LastCountryID; a++) {
+             for (let i = 0; i < data[a].LastElementID; i++) {
+                 data[a].Economy[i].coffers.count = data[a].Economy[i].coffers.count + data[a].Growhts[i].coffers.count
+             }
         }
+        
         dispatch(NewDataActionCreator(data))
 
 
