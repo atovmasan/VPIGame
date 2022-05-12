@@ -5,7 +5,23 @@ Button {
     margin: 7.5px;
 }
 
+.Country {
+    border-bottom: 10px solid black;
+}
+
 .BT {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+input{
+    color: black;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
 }
