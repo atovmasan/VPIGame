@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NextDataThunkCreator } from "../../DAL/NextData"
+import { NextDataThunkCreator, NDataThunkCreator } from "../../DAL/NextData"
 import { store } from "../../Redux/redux-store"
 import "./Content.css"
 import { Button } from "antd"
@@ -39,6 +39,7 @@ export let Country = (props) => {
                 }
                 <div className={"BT"}>
                     <Button onClick={() => store.dispatch(NextDataThunkCreator(props.id, props.LastElementID))} >Следующий ход</Button>
+                    <Button onClick={() => store.dispatch(NDataThunkCreator(props.id, props.LastElementID))} >Добавить к значению</Button>
                 </div>
                 <div className={"BT"}>
                     <Button onClick={ActivateEditMode} >Редактирование</Button>

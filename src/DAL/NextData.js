@@ -25,6 +25,28 @@ export const NextDataThunkCreator = (id, lastID) => {
     }
 }
 
+
+
+
+export const NDataThunkCreator = (id, lastID) => {
+    return async function NextData(dispatch, getState) {
+        let data = getState().ContentReducer.CountryData.CountriesTruth
+             for (let i = 0; i < data[id].LastElementID + 1; i++) {
+                 data[id].Economy[i].coffers.count = data[id].Economy[i].coffers.count + data[id].Growhts[i].coffers.count
+             }
+        
+        dispatch(NewDataActionCreator(data))
+
+
+        const db = getFirestore()
+        await setDoc(doc(db, "EveryData", "Countries"), {
+            CountriesTruth: getState().ContentReducer.CountryData.CountriesTruth
+        });
+
+        dispatch(thunkDataCreator())
+    }
+}
+
 export const NextParametrThunkCreator = (id, lastID) => {
     return async function NextData(dispatch, getState) {
         let data = getState().ContentReducer.CountryData.CountriesTruth

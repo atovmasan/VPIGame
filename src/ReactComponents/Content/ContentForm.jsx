@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux"
 import { SaveDataActionCreator } from "../../Redux/ContentReducer"
 import { NextDataThunkCreator } from "../../DAL/NextData"
 import { NewParametrThunkCreator } from "../../DAL/NewParametr"
-import { Input } from "./Input"
+import { Input, Inputs } from "./Input"
 
 
 export const SimpleForm = (props) => {
@@ -24,11 +24,18 @@ export const SimpleForm = (props) => {
     let GrowhtsMap = props.data.Growhts.map(data =>
         <Input data={data} d={props.data} />
     )
+
+    let EconomMap = props.data.Economy.map(data =>
+        <Inputs data={data} d={props.data} />
+    )
     return (
         <div>
             <h1 color="white">Развитие за ход(редактирование)</h1>
             <ul>
                 {GrowhtsMap}
+            </ul>
+            <ul>
+                {EconomMap}
             </ul>
             <div>
                 <h3>Новый параметр</h3>
