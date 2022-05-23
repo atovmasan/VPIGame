@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { Component, useState }  from 'react'
 import { NextDataThunkCreator, NDataThunkCreator } from "../../DAL/NextData"
 import { store } from "../../Redux/redux-store"
 import "./Content.css"
 import { Button } from "antd"
 import { SimpleForm } from "./ContentForm"
+import { DeleteCountry, DeleteParametr } from '../../Redux/ContentReducer'
 
 
 
@@ -18,6 +19,7 @@ export let Country = (props) => {
     let EconomyMap = props.Economy.map(data =>
         <span>
             <p>{data.coffers.name}: {data.coffers.count} </p>
+            <button onClick={() => store.dispatch(DeleteParametr(props.id, data.coffers))}/>
         </span>
     )
 
@@ -44,6 +46,7 @@ export let Country = (props) => {
                 <div className={"BT"}>
                     <Button onClick={ActivateEditMode} >Редактирование</Button>
                     <Button onClick={DeActivateEditMode} >Выйти из редактирования</Button>
+                    <Button onClick={() => store.dispatch(DeleteCountry(props.id))} >Удалить страну</Button>
                 </div>
                 <h2>Статы:</h2>
                 <ul>

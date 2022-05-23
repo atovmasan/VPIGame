@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { Component, useState }  from 'react'
 import { useDispatch } from "react-redux"
 import { SaveDataActionCreator } from "../../Redux/ContentReducer"
 import { NextDataThunkCreator } from "../../DAL/NextData"

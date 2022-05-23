@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 import { Shapka } from "./ReactComponents/Shapka/Shapka"
 import { ContentContainer } from "./ReactComponents/Content/ContentContainer"

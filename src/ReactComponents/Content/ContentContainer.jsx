@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }  from 'react'
 import { Content } from "./Content"
 import { connect } from "react-redux"
 import "./Content.css"

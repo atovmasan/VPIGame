@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }  from 'react'
 import "./Content.css"
 import { Button } from "antd"
 import { thunkDataCreator, thunkDataListCreator } from "../../DAL/CountryData"
