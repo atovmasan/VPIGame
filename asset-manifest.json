@@ -1,15 +1,17 @@
 {
-  "files": {
-    "main.css": "/VPIGame/static/css/main.859afc69.css",
-    "main.js": "/VPIGame/static/js/main.4502a592.js",
-    "static/js/787.28cb0dcd.chunk.js": "/VPIGame/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/VPIGame/index.html",
-    "main.859afc69.css.map": "/VPIGame/static/css/main.859afc69.css.map",
-    "main.4502a592.js.map": "/VPIGame/static/js/main.4502a592.js.map",
-    "787.28cb0dcd.chunk.js.map": "/VPIGame/static/js/787.28cb0dcd.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.859afc69.css",
-    "static/js/main.4502a592.js"
-  ]
+  "main.css": "/VPIGame/static/css/main.a5b0a175.chunk.css",
+  "main.js": "/VPIGame/static/js/main.7e7bee70.chunk.js",
+  "main.js.map": "/VPIGame/static/js/main.7e7bee70.chunk.js.map",
+  "runtime~main.js": "/VPIGame/static/js/runtime~main.c2ddaceb.js",
+  "runtime~main.js.map": "/VPIGame/static/js/runtime~main.c2ddaceb.js.map",
+  "static/css/2.000d15e8.chunk.css": "/VPIGame/static/css/2.000d15e8.chunk.css",
+  "static/js/2.04be4d0a.chunk.js": "/VPIGame/static/js/2.04be4d0a.chunk.js",
+  "static/js/2.04be4d0a.chunk.js.map": "/VPIGame/static/js/2.04be4d0a.chunk.js.map",
+  "static/js/3.af1b0541.chunk.js": "/VPIGame/static/js/3.af1b0541.chunk.js",
+  "static/js/3.af1b0541.chunk.js.map": "/VPIGame/static/js/3.af1b0541.chunk.js.map",
+  "index.html": "/VPIGame/index.html",
+  "precache-manifest.6713127c0d7bc8da84b7e0e13c0400d2.js": "/VPIGame/precache-manifest.6713127c0d7bc8da84b7e0e13c0400d2.js",
+  "service-worker.js": "/VPIGame/service-worker.js",
+  "static/css/2.000d15e8.chunk.css.map": "/VPIGame/static/css/2.000d15e8.chunk.css.map",
+  "static/css/main.a5b0a175.chunk.css.map": "/VPIGame/static/css/main.a5b0a175.chunk.css.map"
 }
